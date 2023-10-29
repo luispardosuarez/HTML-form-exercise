@@ -1,0 +1,14 @@
+@import url(./resetstyle.css);
+
+body {
+    background-color: rgba(104, 220, 104, 0.815);
+}
+
+h1 {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 5%;
+}
