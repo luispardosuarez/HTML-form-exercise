@@ -47,4 +47,10 @@ li {
     height: 25%;
     font-size: 1.1rem;
     margin-top: 5%;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+#button:hover {background-color: rgba(241, 224, 130, 0.858);
+
 }
