@@ -1,29 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <title>Survey Form</title>
 </head>
+
 <body>
     <h1>GeeksforGeeks Survey Form</h1>
 
-<form action="" method="" id="form">
+    <form action="" method="" id="form">
+        <label for="name">Name</label>
+        <input type="text" placeholder="Enter your name" id="name" required minlength="3" maxlength="30">
 
-<label for="name">Name</label>
-<input type="text" placeholder="Enter your name" id="name" required minlength="3" maxlength="30">
+        <label for="email">Email</label>
+        <input type="email" placeholder="Enter your email" id="email" required>
 
-<label for="email">Email</label>
-<input type="email" placeholder="Enter your email" id="email" required>
+        <label for="age">Age</label>
+        <input type="text" placeholder="Enter your age" id="age">
 
-<label for="age">Age</label>
-<input type="text" placeholder="Enter your age" id="age">
+        <label for="option">Which option best describes you?</label>
+        <select name="descriptioin" id="option">
+            <option value="blank"></option>
+            <option value="student">Student</option>
+            <option value="full-time-worker">Full-time worker</option>
+            <option value="part-time-worker">Part-time worker</option>
+            <option value="freelancer">FreelancerSelf-employed</option>
+            <option value="Volunteer">Volunteer</option>
+            <option value="homeworker">Homeworker</option>
+            <option value="retired">Retired</option>
+        </select>
 
+        <fieldset>Would you recommend GeeksforGeeks to a friend?
+            <ul>
+                <li>
+                    <input type="radio" id="yes" name="recommend" value="yes">
+                    <label for="yes">Yes</label>
+                </li>
+                <li>
+                    <input type="radio" id="no" name="recommend" value="no">
+                    <label for="no">No</label>
+                </li>
+                <li>
+                    <input type="radio" id="maybe" name="recommend" value="maybe">
+                    <label for="maybe">Maybe</label>
+                </li>
+            </ul>
+        </fieldset>
 
+        <fieldset>Languages and Frameworks Known (check all that apply)
+            <ul>
+                <li>
+                    <input type="checkbox" id="c" name="language" value="c">
+                    <label for="c">C</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="c++" name="language" value="c++">
+                    <label for="c++">C++</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="c#" name="language" value="c#">
+                    <label for="c#">C#</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="java" name="language" value="java">
+                    <label for="java">Java</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="python" name="language" value="python">
+                    <label for="python">Python</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="javascript" name="language" value="javascript">
+                    <label for="javascript">JavaScript</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="react" name="framework" value="react">
+                    <label for="react">React</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="angular" name="framework" value="angular">
+                    <label for="angular">Angular</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="django" name="framework" value="django">
+                    <label for="django">Djando</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="spring" name="framework" value="spring">
+                    <label for="spring">Spring</label>
+                </li>
+            </ul>
+        </fieldset>
 
+        <label for="comments">Any comments or suggestions</label>
+        <input type="text" id="comments" required minlength="10" maxlength="300">
 
-</form>
+        <p><button>Submit</button></p>
+
+    </form>
 
 </body>
+
 </html>
