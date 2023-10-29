@@ -4,6 +4,7 @@ body {
     background-color: rgba(104, 220, 104, 0.815);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.1rem;
+    align-content: center;
 }
 
 h1 {
@@ -51,6 +52,78 @@ li {
     transition: background-color 0.5s;
 }
 
-#button:hover {background-color: rgba(250, 234, 145, 0.733);
+#button:hover {
+    background-color: rgba(250, 234, 145, 0.733);
+}
 
+
+
+@media (max-width: 800px) {
+
+    body {
+        font-size: 0.9rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    #button {
+        font-size: 0.9rem;
+    }
+
+    #list {
+        padding: 2%;
+    }
+    
+    li {
+        margin-top: 2%;
+        font-size: 0.8rem;
+    }
+
+    #message {
+        margin-top: 3%;
+    }
+
+    #name, #email, #age, #option, #message {
+      font-size: 0.7rem;
+    }
+}
+
+
+@media (max-width: 280px) {
+
+    body {
+        font-size: 0.8rem;
+    }
+
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    #form {
+        padding: 5%;
+        margin: 3% 15%;
+    }
+
+    #button {
+        font-size: 0.8rem;
+    }
+
+    #list {
+        padding: 2%;
+    }
+    
+    li {
+        margin-top: 2%;
+        font-size: 0.7rem;
+    }
+
+    #message {
+        margin-top: 3%;
+    }
+
+    #name, #email, #age, #option, #message {
+      font-size: 0.6rem;
+    }
 }
