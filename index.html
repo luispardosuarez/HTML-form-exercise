@@ -11,30 +11,30 @@
 <body>
     <h1>GeeksforGeeks Survey Form</h1>
 
-    <form action="" method="" id="form">
+    <form id="personalData" class="form">
 
         <div>
             <label for="name">Name</label>
-            <input type="text" placeholder="Enter your name" id="name" required minlength="3" maxlength="30">
+            <input type="text" placeholder="Enter your name" id="name" required minlength="3" maxlength="30" autocomplete="name">
         </div>
 
         <div>
             <label for="email">Email</label>
-            <input type="email" placeholder="Enter your email" id="email" required>
+            <input type="email" placeholder="Enter your email" id="email" required maxlength="60" autocomplete="email">
         </div>
 
         <div>
             <label for="age">Age</label>
-            <input type="text" placeholder="Enter your age" id="age">
+            <input type="text" placeholder="Enter your age" id="age" required minlength="1" maxlength="3" autocomplete="age">
         </div>
 
         <div>
             <label for="option">Which option best describes you?</label>
-            <select name="descriptioin" id="option" required>
+            <select name="description" id="option" required>
                 <option value="student">Student</option>
                 <option value="full-time-worker">Full-time worker</option>
                 <option value="part-time-worker">Part-time worker</option>
-                <option value="freelancer">FreelancerSelf-employed</option>
+                <option value="freelancer">Freelancer</option>
                 <option value="Volunteer">Volunteer</option>
                 <option value="homeworker">Homeworker</option>
                 <option value="retired">Retired</option>
@@ -45,7 +45,7 @@
             <fieldset>Would you recommend GeeksforGeeks to a friend?
                 <ul id="list">
                     <li>
-                        <input type="radio" id="yes" name="recommend" value="yes">
+                        <input type="radio" id="yes" name="recommend" value="yes"  checked>
                         <label for="yes">Yes</label>
                     </li>
                     <li>
@@ -108,16 +108,18 @@
         </div>
 
         <div>
-            <label for="comments">Any comments or suggestions:</label>
+            <label for="message">Any comments or suggestions:</label>
             <textarea id="message" cols="80" rows="7"></textarea>
         </div>
 
         <div>
-            <p><button id="button">Submit</button></p>
+            <p><button id="button" type="submit">Submit</button></p>
         </div>
 
     </form>
 
+    <script src="/app.js"></script>
+    
 </body>
 
 </html>

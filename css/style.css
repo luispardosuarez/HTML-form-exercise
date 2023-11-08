@@ -16,10 +16,11 @@ h1 {
     margin-top: 2%;
 }
 
-#form {
+.form {
     background-color: rgba(252, 249, 249, 0.84);
     padding: 5%;
     margin: 5% 15% 10%;
+ 
 }
 
 div {
@@ -102,7 +103,7 @@ li {
         font-size: 1.3rem;
     }
 
-    #form {
+    .form {
         padding: 5%;
         margin: 3% 15%;
     }
