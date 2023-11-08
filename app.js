@@ -20,7 +20,9 @@ document.addEventListener("DOMContentLoaded", function() {
             }
 
             if (element.type === 'select-one') {
-                result += element.options[element.selectedIndex].value + '\n';
+                if (element.selectedIndex !== -1) {
+                    result += element.options[element.selectedIndex].value + '\n';
+                }
             }
 
             if (element.type === 'select-multiple') {
@@ -31,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
             }
 
-            if (element.type !== 'radio' && element.type !== 'checkbox' && element.type !== 'select-one' && element.type !== 'select-multiple') {
+            if (element.type === 'text' && element.value.trim() !== '') {
                 result += element.value + '\n';
             }
         }
