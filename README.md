@@ -13,3 +13,5 @@ Minimum:
 
 Extras:
 - After completing the form, with the help of JavaScript, print the data entered into the form on the browser's console.
+
+🌐 ➟ https://luispardosuarez.github.io/HTML-form-exercise/
